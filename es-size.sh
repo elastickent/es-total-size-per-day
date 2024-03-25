@@ -17,7 +17,7 @@ file_date=$($DATE_CMD '+%Y-%m-%d-%H:%M:%S')
 TOTAL_CHANGE_FILE="$BASE_DIR/es_total_change-$file_date.dat"
 
 # Elasticsearch API URL - using https://USER:PASSWD@host:9200 format keep it as is
-ES_URL="https://elastic:ZhMRZDiZbV1UT9LqC2NO@dev1:9200"
+ES_URL="https://elastic:YOURPASSWD@dev1:9200"
 
 # Adjusted to use the full path for curl and jq
 $CURL_CMD -sk "$ES_URL/_cat/indices?h=index,store.size&format=json" | $JQ_CMD -c '.[] | {(.index): .["store.size"]}' > "$TMP_DATA_FILE"
