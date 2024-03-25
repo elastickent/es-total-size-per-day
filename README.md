@@ -42,7 +42,7 @@ This guide provides instructions on how to set up and run the Elasticsearch Indi
      Make sure to replace `/path/to/your/directory/es-size.sh` with the actual path to the script and `/path/to/your/logfile.log` with the path to where you want to store the log output.
 
    - Save and close the editor. The crontab will automatically install the new schedule.
-   - Inspect the logfile.log for any errors.
+   - After a minutes, inspect the logfile.log for any errors.
    - Insure new es_total_change-$DATE.dat files are being created every minute in the $BASE_DIR.
    - Adjust the cronjob to run at midnight every day by changing the crontab entry to:
 
