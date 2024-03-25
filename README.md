@@ -51,14 +51,14 @@ This guide provides instructions on how to set up and run the Elasticsearch Indi
      ```
 ## Package and view results
 1. Package
-    - After after at least two after the conjob is setup, run the "package-total.sh" script
+    - After after at least two days after the conjob is setup, run the "package-total.sh" script
     ```
     ./package-total.sh
     ```
     - Now a totals.csv file will be created in the BASE_DIR. This file will contain the total change in bytes for each day.
 2. View
     - Upload to Kibana using the steps outined in the [Kibana Upload](https://www.elastic.co/blog/importing-csv-and-log-data-into-elasticsearch-with-file-data-visualizer) docs.
-    - Create a [Lens Metric visualization](https://www.elastic.co/guide/en/kibana/current/lens.html) with the SUM function
+    - Create a [Lens visualization](https://www.elastic.co/guide/en/kibana/current/lens.html) with the SUM function
 
 ## Monitoring and Logs
 
